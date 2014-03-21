@@ -1,0 +1,28 @@
+{
+    propertyEditors: [
+     {
+        alias: "tooorangey.uInternationalTelephoneInput",
+        name: "International Telephone Input",
+        valueType: "JSON",
+        editor: {	                                        
+        view: "~/App_Plugins/uInternationalTelephoneInput/uInternationalTelephoneInputEditor.html"
+        },
+        prevalues: {
+            fields: [
+                {
+                    label: "International Telephone Plugin Options",
+                    description: 'json set of options as per Int Tel Plugin eg {preferredCountries: ["gb", "dk", "us"]}',
+                    key: "options",
+                    view: "TextArea"
+                }
+            ]
+        }
+        }
+    
+    ],
+    parameterEditors:[],
+   javascript: [
+        '~/App_Plugins/uInternationalTelephoneInput/uInternationalTelephoneInput.controller.js'
+    ],
+    css: []
+}

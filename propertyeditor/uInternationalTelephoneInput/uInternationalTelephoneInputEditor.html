@@ -1,0 +1,7 @@
+<div ng-controller="tooorangey.uInternationalTelephoneInputController"> 
+       
+    <input type="tel"  class="form-control intlTelNumber" placeholder="e.g. +1 702 123 4569" ng-model="model.value"  ngc-blur="validateTelephoneInput(model.value, $event)"  int-tel-number='' ngc-focus="clearValidation()">
+    <span ng-bind="info"></span>
+	    <span class="alert alert-success" ng-show="ShowValidMessage">Valid <i class="icon icon-check"></i></span>
+    <span class="alert alert-error" ng-show="ShowInValidMessage">Invalid number <i class="icon icon-delete"></i></span>
+    </div>
